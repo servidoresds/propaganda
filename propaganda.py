@@ -32,7 +32,7 @@ async def on_ready():
 async def on_member_join(member):
   embed1 = discord.Embed(colour=color)
   embed1.set_footer(text=client.user.name, icon_url=client.user.avatar_url)
-  embed1 = discord.Embed(title="💜 PFAFFGAMER 💜",color=color,description='**Seja bem-vindo ao 💜 PFAFFGAMER 💜!  <@{}\n\nGostou do bot? quer ter um pro seu servidor? entre contato com o criador <@469458019655352320>**', url="https://discord.gg/eAj9a9K",.format(member.id))
+  embed1 = discord.Embed(title="💜 PFAFFGAMER 💜",color=color,description='**Seja bem-vindo ao 💜 PFAFFGAMER 💜!  <@{}\n\nGostou do bot? quer ter um pro seu servidor? entre contato com o criador <@469458019655352320>**', url="https://discord.gg/eAj9a9K".format(member.id))
   await client.send_message(member,embed=embed1)
 
 client.run(str(os.environ.get('TOKEN')))
