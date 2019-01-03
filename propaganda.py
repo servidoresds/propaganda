@@ -26,15 +26,6 @@ async def on_ready():
     print('Logged in as ---->', client.user)
     print('ID:', client.user.id)
     print("Servidores: {} Serves".format(str(len(client.servers))))
-    while True:
-        await client.change_presence(game=discord.Game(name="{} Usuários 💜".format(str(len(set(client.get_all_members())))), type=1, url='https://www.twitch.tv/robertinhapfaff'), status='streaming')
-        await asyncio.sleep(20)
-
-        await client.change_presence(game=discord.Game(name="Vamos conversar? Live no streamcraft 💌", type=1,url='https://www.twitch.tv/robertinhapfaff'), status='streaming')
-        await asyncio.sleep(40)
-
-        await client.change_presence(game=discord.Game(name="Oi Gente , Oi Gente ,Oiiii Genteeeee 💋", type=1,url='https://www.twitch.tv/robertinhapfaff'), status='streaming')
-        await asyncio.sleep(50)
 
 
 @client.event
